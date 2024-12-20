@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: curl -v https://download.oracle.com/java/23/latest/jdk-23_linux-aarch64_bin.tar.gz -o jdk-23_linux-aarch64_bin.tar.gz
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
